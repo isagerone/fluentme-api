@@ -1,0 +1,34 @@
+# Projeto - FluentME API
+
+API backend simulando plataforma de aprendizado com IA.
+
+## Como executar com Docker
+
+docker-compose up --build
+
+Acesse:
+http://localhost:3000
+
+## Pipeline CI/CD
+
+GitHub Actions com:
+- Build automático
+- Testes automatizados
+- Build Docker
+- Deploy:
+  - staging → ambiente teste
+  - main → produção
+
+## Containerização
+
+- Node.js + Express
+- PostgreSQL
+- Docker + Docker Compose
+
+## Tecnologias
+
+- Node.js
+- Express
+- Docker
+- GitHub Actions
+- PostgreSQL
