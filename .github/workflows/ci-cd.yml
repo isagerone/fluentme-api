@@ -20,8 +20,11 @@ jobs:
     - name: Install
       run: npm install
 
+    - name: Dar permissão ao Jest
+      run: chmod +x ./node_modules/.bin/jest
+
     - name: Testes
-      run: npx jest
+      run: npm test
 
     - name: Build Docker
       run: docker build -t fluentme-api .
